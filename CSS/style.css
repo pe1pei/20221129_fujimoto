@@ -1,0 +1,240 @@
+/* ヘッダー部分 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 30px;
+  min-width: 550px;
+}
+.header__logo img {
+  width: auto;
+  height: 20px;
+  display: block;
+  padding-top: 5px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  color: #606060;
+  align-items: center;
+}
+.header__nav-item {
+  display: inline-block;
+  padding-left: 15px;
+  height: 20px;
+  font-size: 95%;
+}
+/*　最初の部分　*/
+.firstview {
+  width: auto;
+  position: relative;
+}
+.firstview__img {
+  width: auto;
+}
+
+.firstview__img img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+}
+.firstview__title {
+  font-family: "Indie Flower", cursive;
+  position: absolute;
+  top: 18%;
+  left: 20.5%;
+  padding: 0;
+  margin: 0;
+  font-size: 4.5vw;
+  color: #bc2074;
+}
+.firstview__title__growth {
+  color: #06a1b3;
+}
+.firstview__title__for {
+  margin-top: 6%;
+}
+.firstview__sabtitle {
+  position: absolute;
+  top: 63%;
+  left: 20.5%;
+  padding: 0;
+  margin: 0;
+  font-size: 1.45vw;
+  color: #bc2074;
+}
+.firstview__sabtitle__seityou {
+  color: #06a1b3;
+}
+.firstview__text {
+  position: absolute;
+  top: 68%;
+  left: 20.5%;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1vw;
+  color: #606060;
+}
+/*　ニュース　*/
+.news {
+  padding: 100px;
+  display: flex;
+  width: 50%;
+  flex-flow: column;
+  margin-left: 25%;
+}
+.news__title {
+  margin: 0px 0px 10px 0px;
+  font-family: "Indie Flower", cursive;
+  color: #bc2074;
+}
+.news__subtitle {
+  color: #606060;
+  font-size: 24px;
+}
+.news__line {
+  border: none;
+  border-bottom: 2px solid;
+  color: #606060;
+  margin: 20px 0px;
+}
+/*　ニュースのテーブル部分　*/
+.news__table {
+  width: 100%;
+  text-align: left;
+  font-size: 1vh;
+}
+.news__table__paragraph {
+  border-bottom: 1px solid;
+  color: #606060;
+}
+.news__table th {
+  font-weight: normal;
+  padding: 20px 0px 20px 0px;
+  border-top: 20px;
+  text-align: left;
+}
+.news__table__item {
+  background-color: #bc2074;
+  color: white;
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+}
+/*　概要　*/
+.about {
+  background-color: #eaeaea;
+  display: flex;
+  height: 330px;
+  flex-flow: column;
+  position: relative;
+}
+.about__title {
+  margin: 20px 0px 20px 0px;
+  font-family: "Indie Flower", cursive;
+  color: #bc2074;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.about__subtitle {
+  margin: 0px 0px 30px 0px;
+  color: #606060;
+  font-size: 24px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.about__img img {
+  width: 23%;
+  display: block;
+  top: 30%;
+  right: 20%;
+  position: absolute;
+}
+.about__text-tech {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #606060;
+  line-height: 25px;
+}
+
+.about__text-school {
+  position: absolute;
+  top: 56%;
+  left: 20%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  font-size: 12px;
+  color: #606060;
+  line-height: 25px;
+}
+/*　サービス　*/
+.service {
+  display: flex;
+  margin-top: 50px;
+  flex-flow: column;
+  position: absolute;
+}
+.service__title {
+  margin: 20px 0px 10px 0px;
+  font-family: "Indie Flower", cursive;
+  color: #bc2074;
+  position: relative;
+  left: 20%;
+}
+.service__subtitle {
+  margin: 0px 0px 20px 0px;
+  color: #606060;
+  font-size: 24px;
+  position: relative;
+  left: 20%;
+}
+/*　サービスグリッド　*/
+.service__grid {
+  display: grid;
+  grid-template-rows: 160px 160px;
+  grid-template-columns: auto auto;
+  padding: 10px 20% 30px 20%;
+  color: #ffffff;
+}
+.box1 {
+  display: flex;
+  grid-column: 1/1;
+  grid-row: 1/3;
+  background: #004e4e;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0px 30px 0px 30px;
+}
+.box2 {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background: #008888;
+  padding: 20px;
+}
+.box3 {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: #008888;
+  padding: 20px;
+}
+.service__img img {
+  width: 100px;
+}
+.box__title {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+}
+.box__text {
+  font-size: 12.5px;
+  font-weight: 10;
+  padding: 10px;
+}
